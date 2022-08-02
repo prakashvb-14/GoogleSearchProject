@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="167.132">
+<testcase classname="Search Functionality" name="To verify J.P.Morgon Logo is displayed" time="87.324">
+<system-out><![CDATA[Given user launches the website successfully................................passed
+Given I am an user who launch the search engine.............................passed
+And I enter the 'J. P. Morgan' in search box................................passed
+When I click the first search result........................................passed
+Then J.P.Morgon website should be launched..................................passed
+And I should see the logo is displayed correctly............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="To verify incorrect results is populated if the bank name is entered incorrectly" time="38.919">
+<system-out><![CDATA[Given user launches the website successfully................................passed
+Given I am an user who launch the search engine.............................passed
+When I enter the 'Wikipedia' in search box..................................passed
+When I click on the search results..........................................passed
+Then I should not see the correct page loaded with logo.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Search Functionality" name="To verify incorrect page is displayed if the user selects any other results from the search" time="40.764">
+<system-out><![CDATA[Given user launches the website successfully................................passed
+Given I am an user who launch the search engine.............................passed
+When I enter the 'J. P. Morgan' in search box...............................passed
+And I should see results displayed..........................................passed
+When I click on the results which dont have J.P. Morgan.....................passed
+Then I should not see the correct page loaded with logo.....................passed
+]]></system-out>
+</testcase>
+</testsuite>
